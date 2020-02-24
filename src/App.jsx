@@ -8,12 +8,15 @@ import "./resources/css/plugin.css";
 import "./resources/css/style.css";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
+import Swiper from "./components/Home/Swiper";
 const App = () => {
   return (
     <BrowserRouter>
       <div>
         <Header />
-        <div className="app" style={{ height: `300vh` }}></div>
+        <div className="app" style={{ height: `300vh` }}>
+          <Swiper/>
+        </div>
         <Footer/>
       </div>
     </BrowserRouter>

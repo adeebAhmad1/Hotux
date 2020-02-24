@@ -20,7 +20,7 @@ class Header extends Component {
   }
   render() {
     return (
-      <header className="main_header_area" style={{backgroundColor:`#333`}}>
+      <header className="main_header_area">
         <div className="header-content">
           <div className="container">
             <div className="links links-left">
