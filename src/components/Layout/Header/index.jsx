@@ -28,7 +28,7 @@ class Header extends Component {
                 <li>
                   <Link to="/">
                     <i className="fa fa-envelope" aria-hidden="true"></i>{" "}
-                    adeebahmad0010"gmail.com
+                    adeebahmad0010@gmail.com
                   </Link>
                 </li>
                 <li>
@@ -37,19 +37,12 @@ class Header extends Component {
                     0344-8781207
                   </Link>
                 </li>
-                <li>
-                  <select>
-                    <option>Eng</option>
-                    <option>Fra</option>
-                    <option>Esp</option>
-                  </select>
-                </li>
               </ul>
             </div>
             <div className="links links-right pull-right">
               <ul>
                 <li>
-                  <Link to="/" data-toggle="modal" data-target="#login">
+                  <Link to="/home/login" data-toggle="modal" data-target="#login">
                     <i className="fa fa-user" aria-hidden="true"></i> Login
                   </Link>
                 </li>

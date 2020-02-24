@@ -8,13 +8,15 @@ import "./resources/css/style.css";
 import Header from "./components/Layout/Header";
 import Footer from "./components/Layout/Footer";
 import Home from "./components/Home/Home";
+// import Login from "./components/Login";
 const App = () => {
   return (
     <BrowserRouter>
       <div>
         <Header/>
         <Route exact component={Home} path="/"/>
-        <Route exact component={Home} path="/home"/>
+        <Route component={Home} path="/home"/>
+        {/* <Route component={Login} path="/home/login"/> */}
         <Footer/>
       </div>
     </BrowserRouter>
