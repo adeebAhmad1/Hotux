@@ -1,30 +1,31 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import {Link} from "react-router-dom"
 import bed from "../../../resources/images/icons/bed-logo.png";
 class Swiper extends Component {
 
   showSlides = ()=>{
     const arr = [1,2,3]
     return arr.map(el=>{
-      return <div className={`slider-slick slide${el}`} style={{position:"relative"}} >
+      return <div key={el} className={`slider-slick slide${el}`} style={{position:"relative"}} >
       <div className="swiper-content">
         <div className="slider-logo">
-          <img src={bed} alt="Image" style={{maxWidth: `100%`,width:'auto'}}/>
+          <img src={bed} alt="Pic" style={{maxWidth: `100%`,width:'auto'}}/>
         </div>
         <h3>The lap of Luxury</h3>
         <h1>
           Hotel <span>Hotux</span>
         </h1>
-        <a href="#" className="slider-btn btn-or mar-right-10">
+        <Link to="/" className="slider-btn btn-or mar-right-10">
           <i className="fa fa-book"></i> Explore Our Rooms
-        </a>
-        <a
-          href="#"
+        </Link>
+        <Link
+          to="/"
           data-animation="animated fadeInUp"
           className="slider-btn btn-wt"
         >
           <i className="fa fa-book"></i> Book A Room Now
-        </a>
+        </Link>
       </div>
     </div>
     })
@@ -58,6 +59,7 @@ class Swiper extends Component {
                       id="date-range2"
                       className="form-control"
                       defaultValue="Check In"
+                      type="date"
                     />
                     <span className="input-group-addon">
                       <i className="fa fa-calendar" aria-hidden="true"></i>
@@ -72,6 +74,7 @@ class Swiper extends Component {
                       id="date-range3"
                       className="form-control"
                       defaultValue="Check Out"
+                      type="date"
                     />
                     <span className="input-group-addon">
                       <i className="fa fa-calendar" aria-hidden="true"></i>
@@ -117,99 +120,3 @@ class Swiper extends Component {
 }
 
 export default Swiper;
-
-/*
- <div
-            className="swiper-slide"
-            style={{
-              backgroundImage: `url(${bg1})`,
-              height: `100vh`
-            }}
-          >
-            <div className="swiper-content">
-              <div className="slider-logo">
-                <img src={bed} alt="Image" />
-              </div>
-              <h3 >The lap of Luxury</h3>
-              <h1 >
-                Hotel <span>Hotux</span>
-              </h1>
-              <a
-                href="#"
-                
-                className="slider-btn btn-or mar-right-10"
-              >
-                <i className="fa fa-book"></i> Explore Our Rooms
-              </a>
-              <a
-                href="#"
-                data-animation="animated fadeInUp"
-                className="slider-btn btn-wt"
-              >
-                <i className="fa fa-book"></i> Book A Room Now
-              </a>
-            </div>
-          </div>
-          <div
-            className="swiper-slide"
-            style={{
-              backgroundImage: `url(${bg2})`,
-              height: `100vh`
-            }}
-          >
-            <div className="swiper-content">
-              <div className="slider-logo">
-                <img src={bed} alt="Image" />
-              </div>
-              <h3 data-animation="animated fadeInUp">The lap of Luxury</h3>
-              <h1 data-animation="animated fadeInUp">
-                Hotel <span>Hotux</span>
-              </h1>
-              <a
-                href="#"
-                data-animation="animated fadeInUp"
-                className="slider-btn btn-or mar-right-10"
-              >
-                <i className="fa fa-book"></i> Explore Our Rooms
-              </a>
-              <a
-                href="#"
-                data-animation="animated fadeInUp"
-                className="slider-btn btn-wt"
-              >
-                <i className="fa fa-book"></i> Book A Room Now
-              </a>
-            </div>
-          </div>
-          <div
-            className="swiper-slide"
-            style={{
-              backgroundImage: `url(${bg3})`,
-              height: `100vh`
-            }}
-          >
-            <div className="swiper-content">
-              <div className="slider-logo">
-                <img src={bed} alt="Image" />
-              </div>
-              <h3 >The lap of Luxury</h3>
-              <h1 >
-                Hotel <span>Hotux</span>
-              </h1>
-              <a
-                href="#"
-                
-                className="slider-btn btn-or mar-right-10"
-              >
-                <i className="fa fa-book"></i> Explore Our Rooms
-              </a>
-              <a
-                href="#"
-                
-                className="slider-btn btn-wt"
-              >
-                <i className="fa fa-book"></i> Book A Room Now
-              </a>
-            </div>
-          </div>
- */
