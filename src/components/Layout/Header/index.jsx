@@ -2,13 +2,12 @@ import React, { Component } from "react";
 import {Link} from "react-router-dom"
 import logo from "../../../resources/images/logo.png";
 import logo2 from "../../../resources/images/logo-black.png";
-
 class Header extends Component {
   componentDidMount(){
     window.addEventListener("scroll", this.handleScroll)
   }
   componentWillUnmount(){
-    window.removeEventListener("scroll", this.handleScroll)
+    window.removeEventListener("scroll", this.handleScroll);
   }
   handleScroll =()=>{
     if(window.scrollY > 130){
@@ -42,14 +41,14 @@ class Header extends Component {
             <div className="links links-right pull-right">
               <ul>
                 <li>
-                  <Link to="/home/login" data-toggle="modal" data-target="#login">
+                  <a href="#login">
                     <i className="fa fa-user" aria-hidden="true"></i> Login
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link to="/" data-toggle="modal" data-target="#register">
+                  <a href="#register">
                     <i className="fa fa-pen" aria-hidden="true"></i> Register
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <ul className="social-links">
@@ -111,7 +110,7 @@ class Header extends Component {
                     <ul className="dropdown-menu">
                       <li className="submenu dropdown">
                         <Link
-                          to="index-2.html"
+                          to="/"
                           className="dropdown-toggle"
                           data-toggle="dropdown"
                           role="button"
@@ -146,7 +145,7 @@ class Header extends Component {
                   </li>
                   <li className="submenu dropdown">
                     <Link
-                      to="roomlist-2.html"
+                      to="/"
                       className="dropdown-toggle"
                       data-toggle="dropdown"
                       role="button"
@@ -157,10 +156,10 @@ class Header extends Component {
                     </Link>
                     <ul className="dropdown-menu">
                       <li>
-                        <Link to="roomlist-2.html">Room List</Link>
+                        <Link to="/">Room List</Link>
                       </li>
                       <li>
-                        <Link to="roomlist-1.html">Room Grid</Link>
+                        <Link to="/">Room Grid</Link>
                       </li>
                       <li>
                         <Link to="detail-full.html">Room Detail</Link>
@@ -196,7 +195,7 @@ class Header extends Component {
                     <ul className="dropdown-menu">
                       <li className="submenu dropdown">
                         <Link
-                          to="service.html"
+                          to="/"
                           className="dropdown-toggle"
                           data-toggle="dropdown"
                           role="button"
@@ -208,33 +207,21 @@ class Header extends Component {
                         </Link>
                         <ul className="dropdown-menu">
                           <li>
-                            <Link to="service.html">Service</Link>
+                            <Link to="/">Service</Link>
                           </li>
                           <li>
-                            <Link to="service-detail.html">Service Detail</Link>
+                            <Link to="/">Service Detail</Link>
                           </li>
                         </ul>
                       </li>
                       <li className="submenu dropdown">
                         <Link
-                          to="aboutus.html"
+                          to="/about"
                           className="dropdown-toggle"
-                          data-toggle="dropdown"
                           role="button"
-                          aria-haspopup="true"
-                          aria-expanded="false"
                         >
                           About Us
-                          <i className="fa fa-angle-right" aria-hidden="true"></i>
                         </Link>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <Link to="aboutus.html">About One</Link>
-                          </li>
-                          <li>
-                            <Link to="aboutus1.html">About Two</Link>
-                          </li>
-                        </ul>
                       </li>
                       <li className="submenu dropdown">
                         <Link

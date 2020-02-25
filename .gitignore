@@ -9,7 +9,6 @@
 /coverage
 # production
 /build
-/src/components/Login
 # misc
 .DS_Store
 .env.local

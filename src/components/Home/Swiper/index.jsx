@@ -10,7 +10,7 @@ class Swiper extends Component {
       return <div key={el} className={`slider-slick slide${el}`} style={{position:"relative"}} >
       <div className="swiper-content">
         <div className="slider-logo">
-          <img src={bed} alt="Pic" style={{maxWidth: `100%`,width:'auto'}}/>
+          <img src={bed} alt={el} style={{maxWidth: `100%`,width:'auto'}}/>
         </div>
         <h3>The lap of Luxury</h3>
         <h1>
@@ -108,7 +108,7 @@ class Swiper extends Component {
               </div>
               <div className="table-item">
                 <div className="form-btn">
-                  <a className="btn btn-orange">Check Availability</a>
+                  <Link to="/" className="btn btn-orange">Check Availability</Link>
                 </div>
               </div>
             </div>

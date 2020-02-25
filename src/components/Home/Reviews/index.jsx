@@ -11,7 +11,7 @@ class Reviews extends Component {
   };
   showReviews = () => (
     this.state.images.map((el, i) => (
-      <div class="slider-item" style={{marginRight:`30px`,width:`45%`}}>
+      <div key={i} class="slider-item" style={{marginRight:`30px`,width:`45%`}}>
         <div class="slider-image">
           <img src={el} alt="image" />
         </div>

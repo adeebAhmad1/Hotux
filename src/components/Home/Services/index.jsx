@@ -6,9 +6,9 @@ import { Link } from "react-router-dom"
 class Services extends Component {
   render() {
     return (
-      <section class="services">
-        <div class="container">
-          <div class="section-title">
+      <section className="services">
+        <div className="container">
+          <div className="section-title">
             <h2>
               Explore <span>Services</span>
             </h2>
@@ -18,14 +18,14 @@ class Services extends Component {
               vitae consectetur turpis
             </p>
           </div>
-          <div class="service-outer">
-            <div class="row">
-              <div class="col-md-4 col-sm-12 col-xs-12">
-                <div class="service-item">
-                  <div class="service-image">
+          <div className="service-outer">
+            <div className="row">
+              <div className="col-md-4 col-sm-12 col-xs-12">
+                <div className="service-item">
+                  <div className="service-image">
                     <img src={img1} alt="Imae" />
                   </div>
-                  <div class="service-content">
+                  <div className="service-content">
                     <h4>
                       <Link to="/restaurant">Restaurant</Link>
                     </h4>
@@ -33,12 +33,12 @@ class Services extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="service-item">
-                  <div class="service-image">
+              <div className="col-md-4 col-sm-6 col-xs-6">
+                <div className="service-item">
+                  <div className="service-image">
                     <img src={img2} alt="Imag" />
                   </div>
-                  <div class="service-content">
+                  <div className="service-content">
                     <h4>
                       <Link to="/services">Massage</Link>
                     </h4>
@@ -46,12 +46,12 @@ class Services extends Component {
                   </div>
                 </div>
               </div>
-              <div class="col-md-4 col-sm-6 col-xs-6">
-                <div class="service-item">
-                  <div class="service-image">
+              <div className="col-md-4 col-sm-6 col-xs-6">
+                <div className="service-item">
+                  <div className="service-image">
                     <img src={img3} alt="Iage" />
                   </div>
-                  <div class="service-content">
+                  <div className="service-content">
                     <h4>
                       <Link to="/services">Conference Room</Link>
                     </h4>
