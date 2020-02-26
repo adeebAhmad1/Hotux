@@ -5,7 +5,8 @@ import americanexpress from "../../../resources/images/icons/americanexpress.png
 import appstore from "../../../resources/images/icons/appstore.png"
 import googleplay from "../../../resources/images/icons/googleplay.png"
 import tripadvisor from "../../../resources/images/tripadvisor.png"
-import logo from "../../../resources/images/logo.png"
+import logo from "../../../resources/images/logo.png";
+import { Link } from "react-router-dom"
 const Footer = () => {
   return (
     <footer>
@@ -34,14 +35,14 @@ const Footer = () => {
                             <div className="quick-links">
                                 <h4>Quick Links</h4>
                                 <ul>
-                                    <li><a href="#">Home</a></li>
-                                    <li><a href="#">About</a></li>
-                                    <li><a href="#">Rooms</a></li>
-                                    <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Blog</a></li>
-                                    <li><a href="#">Gallery</a></li>
-                                    <li><a href="#">Services</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><Link to="/">Home</Link></li>
+                                    <li><Link to="/">About</Link></li>
+                                    <li><Link to="/">Rooms</Link></li>
+                                    <li><Link to="/">Testimonials</Link></li>
+                                    <li><Link to="/">Blog</Link></li>
+                                    <li><Link to="/">Gallery</Link></li>
+                                    <li><Link to="/">Services</Link></li>
+                                    <li><Link to="/">Contact</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -49,14 +50,14 @@ const Footer = () => {
                             <div className="Rooms">
                                 <h4>Rooms</h4>
                                 <ul>
-                                    <li><a href="#">Single Rooms</a></li>
-                                    <li><a href="#">Double Rooms</a></li>
-                                    <li><a href="#">Studio Rooms</a></li>
-                                    <li><a href="#">Kingsize Rooms</a></li>
-                                    <li><a href="#">Presidentsuite Rooms</a></li>
-                                    <li><a href="#">Luxury Kings Rooms</a></li>
-                                    <li><a href="#">Connecting Rooms</a></li>
-                                    <li><a href="#">Murphy Rooms</a></li>
+                                    <li><Link to="/">Single Rooms</Link></li>
+                                    <li><Link to="/">Double Rooms</Link></li>
+                                    <li><Link to="/">Studio Rooms</Link></li>
+                                    <li><Link to="/">Kingsize Rooms</Link></li>
+                                    <li><Link to="/">Presidentsuite Rooms</Link></li>
+                                    <li><Link to="/">Luxury Kings Rooms</Link></li>
+                                    <li><Link to="/">Connecting Rooms</Link></li>
+                                    <li><Link to="/">Murphy Rooms</Link></li>
                                 </ul>
                             </div>
                         </div>
@@ -80,12 +81,12 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-md-4 col-sm-12 col-xs-12">
                         <div className="copyright-content">
-                            <p>Copyright 2019. Made with <span>♥</span>. All Rights Reserved. <a href="#">Hotux</a></p>
+                            <p>Copyright 2019. Made with <span>♥</span>. All Rights Reserved. <Link to="/">Hotux</Link></p>
                             <ul>
-                                <li><a href="#"><i className="fab fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i className="fab fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i className="fab fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i className="fab fa-google-plus" aria-hidden="true"></i></a></li>
+                                <li><Link to="/"><i className="fab fa-facebook" aria-hidden="true"></i></Link></li>
+                                <li><Link to="/"><i className="fab fa-twitter" aria-hidden="true"></i></Link></li>
+                                <li><Link to="/"><i className="fab fa-instagram" aria-hidden="true"></i></Link></li>
+                                <li><Link to="/"><i className="fab fa-google-plus" aria-hidden="true"></i></Link></li>
                             </ul>
                         </div>
                     </div>
@@ -97,9 +98,9 @@ const Footer = () => {
                     <div className="col-md-4 col-sm-12 col-xs-12">
                         <div className="copyright-links mar-bottom-20">
                             <ul>
-                                <li><a href="#">Accomodations</a></li>
-                                <li><a href="#">Book Now</a></li>
-                                <li><a href="#">Terms and Conditions</a></li>
+                                <li><Link to="/">Accomodations</Link></li>
+                                <li><Link to="/">Book Now</Link></li>
+                                <li><Link to="/">Terms and Conditions</Link></li>
                             </ul>
                         </div>
                         <div className="playstore-links">

@@ -1,14 +1,14 @@
 import React, { Component } from "react";
-
+import { Link } from "react-router-dom"
 class Discover extends Component {
   render() {
     return (
-      <section class="call-to-action">
-        <div class="container-fluid">
-          <div class="row display-flex">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="call-content pad-left-30">
-                <h2 class="white mar-bottom-25">
+      <section className="call-to-action">
+        <div className="container-fluid">
+          <div className="row display-flex">
+            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div className="call-content pad-left-30">
+                <h2 className="white mar-bottom-25">
                   Discover a brand <span>luxurious</span> hotel
                 </h2>
                 <p>
@@ -21,13 +21,13 @@ class Discover extends Component {
                   porttitor, eros nec porttitor viverra, felis libero luctus
                   nisi, non volutpat purus felis ut erat ipsum.
                 </p>
-                <a href="#" class="btn btn-orange mar-top-20">
-                  READ MORE <i class="fas fa-angle-double-right"></i>
-                </a>
+                <Link to="/about" className="btn btn-orange mar-top-20">
+                  READ MORE <i className="fas fa-angle-double-right"></i>
+                </Link>
               </div>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-              <div class="video-figure"></div>
+            <div className="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+              <div className="video-figure"></div>
             </div>
           </div>
         </div>

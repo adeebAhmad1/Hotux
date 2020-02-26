@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import logo from "../../resources/images/logo-black.png"
+import { Link } from "react-router-dom"
 class RegisterModel extends Component {
   render() {
     return (
@@ -24,32 +25,32 @@ class RegisterModel extends Component {
               <div className="form-group">
                 <input type="password" placeholder="Confirm password" />
               </div>
-            </form>
             <div className="form-btn">
-              <a href="#" className="btn btn-orange">
+              <button className="btn btn-orange">
                 SIGN UP
-              </a>
+              </button>
             </div>
+            </form>
             <ul className="social-links">
               <li>
-                <a href="#">
+                <Link to="/">
                   <i className="fab fa-facebook" aria-hidden="true"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <i className="fa-bed fa-twitter" aria-hidden="true"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <i className="fab fa-instagram" aria-hidden="true"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <i className="fab fa-linkedin" aria-hidden="true"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

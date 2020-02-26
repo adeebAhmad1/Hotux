@@ -4,6 +4,7 @@ import img2 from "../../../resources/images/team2.jpg";
 import img3 from "../../../resources/images/team3.jpg";
 import img4 from "../../../resources/images/team4.jpg";
 import Slider from "react-slick";
+import { Link } from "react-router-dom"
 class Team extends Component {
   state = {
     names: ["John Anderson", "Erina Gray", "Micheal Carter", "Nelson Roar"],
@@ -22,24 +23,24 @@ class Team extends Component {
             <p> {this.state.job[i]} </p>
             <ul className="social-links">
               <li>
-                <a href="#">
+                <Link to="/">
                   <i className="fab fa-facebook" aria-hidden="true"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <i className="fab fa-twitter" aria-hidden="true"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <i className="fab fa-instagram" aria-hidden="true"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#">
+                <Link to="/">
                   <i className="fab fa-linkedin" aria-hidden="true"></i>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

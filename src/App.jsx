@@ -11,16 +11,7 @@ import Home from "./components/Home/Home";
 import About from "./components/About/About";
 import Services from "./components/Services/Services";
 
-const loader = document.querySelector('#preloader');
-
-// if you want to show the loader when React loads data again
-const showLoader = () => loader.style.display = "block";
-
-const hideLoader = () => loader.style.display = "none";
 class App extends Component {
-  componentDidMount() {
-    hideLoader();
-  }
   render() {
     return (
       <BrowserRouter>

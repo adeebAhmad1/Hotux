@@ -1,6 +1,8 @@
 import React from "react";
 import img1 from "../../../resources/images/aboutus2.jpg"
 import img2 from "../../../resources/images/aboutus1.jpg"
+import { Link } from "react-router-dom"
+
 const Info = () => {
   return (
     <section className="about">
@@ -20,19 +22,19 @@ const Info = () => {
                 porta velit eu nisi consequat dictum. Maecenas accumsan tempor
                 neque sed mattis.{" "}
               </p>
-              <a href="#" className="btn btn-orange">
+              <Link to="/" className="btn btn-orange">
                 KNOW MORE ABOUT US
-              </a>
+              </Link>
             </div>
           </div>
           <div className="col-md-3 col-sm-6 col-xs-12">
             <div className="about-us-image mar-top-50">
-              <img src={img1} alt="image" />
+              <img src={img1} alt="abc" />
             </div>
           </div>
           <div className="col-md-3 col-sm-6 col-xs-12">
             <div className="about-us-image">
-              <img src={img2} alt="image" />
+              <img src={img2} alt="abc" />
             </div>
           </div>
         </div>

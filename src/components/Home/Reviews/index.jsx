@@ -11,11 +11,11 @@ class Reviews extends Component {
   };
   showReviews = () => (
     this.state.images.map((el, i) => (
-      <div key={i} class="slider-item" style={{marginRight:`30px`,width:`45%`}}>
-        <div class="slider-image">
+      <div key={i} className="slider-item" style={{marginRight:`30px`,width:`45%`}}>
+        <div className="slider-image">
           <img src={el} alt={this.state.names[i]} />
         </div>
-        <div class="slider-content">
+        <div className="slider-content">
           <p style={{width: `90%`}}>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod
             tortor vitae nisi pharetra egestas. Sed egestas sapien libero.
@@ -23,7 +23,7 @@ class Reviews extends Component {
           <h4>{this.state.names[i]}</h4>
           <span>Germany</span>
         </div>
-        <div class="slider-quote">
+        <div className="slider-quote">
           <img src={quote} alt={this.state.names[i]} />
         </div>
       </div>
@@ -40,9 +40,9 @@ class Reviews extends Component {
       slidesToScroll: 1
     };
     return (
-      <section class="reviews">
-        <div class="container">
-          <div class="section-title title-white">
+      <section className="reviews">
+        <div className="container">
+          <div className="section-title title-white">
             <h2>
               Explore <span>Reviews</span>
             </h2>

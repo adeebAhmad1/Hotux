@@ -2,9 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom"
 const Newsletter = () => {
   return (
-    <section class="newsletter">
-      <div class="container">
-        <div class="section-title title-white">
+    <section className="newsletter">
+      <div className="container">
+        <div className="section-title title-white">
           <h2>
             Subscribe to our <span>Newsletter</span>
           </h2>
@@ -14,10 +14,10 @@ const Newsletter = () => {
             consectetur turpis
           </p>
         </div>
-        <div class="newsletter-form">
+        <div className="newsletter-form">
           <form>
             <input type="email" placeholder="Enter your email" />
-            <Link to="/signup" class="btn btn-orange">
+            <Link to="/signup" className="btn btn-orange">
               SIGN UP
             </Link>
           </form>
