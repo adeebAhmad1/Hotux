@@ -1,18 +1,18 @@
 import React from "react";
-
-const Breadcrumb = () => {
+import {Link} from "react-router-dom"
+const Breadcrumb = (props) => {
   return (
     <section className="breadcrumb-outer">
       <div className="container">
         <div className="breadcrumb-content">
-          <h2>About us 1</h2>
+          <h2>{props.page}</h2>
           <nav aria-label="breadcrumb">
             <ul className="breadcrumb">
               <li className="breadcrumb-item">
-                <a href="#">Hotux</a>
+                <Link to="/">Hotux</Link>
               </li>
               <li className="breadcrumb-item active" aria-current="page">
-                About us
+                {props.page}
               </li>
             </ul>
           </nav>

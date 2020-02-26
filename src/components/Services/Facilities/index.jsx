@@ -3,7 +3,7 @@ import img1 from "../../../resources/images/service1.jpg";
 import img2 from "../../../resources/images/service2.jpg";
 import img3 from "../../../resources/images/service3.jpg";
 import { Link } from "react-router-dom"
-class Services extends Component {
+class Facilities extends Component {
   render() {
     return (
       <section className="services">
@@ -67,4 +67,4 @@ class Services extends Component {
   }
 }
 
-export default Services;
+export default Facilities;

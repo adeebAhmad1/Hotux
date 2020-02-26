@@ -13,7 +13,7 @@ class Reviews extends Component {
     this.state.images.map((el, i) => (
       <div key={i} class="slider-item" style={{marginRight:`30px`,width:`45%`}}>
         <div class="slider-image">
-          <img src={el} alt="image" />
+          <img src={el} alt={this.state.names[i]} />
         </div>
         <div class="slider-content">
           <p style={{width: `90%`}}>
@@ -24,7 +24,7 @@ class Reviews extends Component {
           <span>Germany</span>
         </div>
         <div class="slider-quote">
-          <img src={quote} alt="Image" />
+          <img src={quote} alt={this.state.names[i]} />
         </div>
       </div>
     ))

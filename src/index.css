@@ -27,6 +27,9 @@ code {
   left: 50%;
   transform: translate(-50%,-50%);
 }
+.feature-item{
+  height: 360px !important;
+}
 .model{
   display: none;
 }

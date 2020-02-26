@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="footer-top">
             <div className="container">
                 <div className="footer-logo text-center">
-                    <img src={logo} alt="Image"/>
+                    <img src={logo} alt="Hotux"/>
                 </div>
                 <div className="footer-content">
                     <div className="row">
@@ -24,9 +24,9 @@ const Footer = () => {
                             <div className="footer-payment">
                                 <h4>We Accept</h4>
                                 <ul>
-                                    <li><img src={visa} alt="image"/></li>
-                                    <li><img src={mastercard} alt="image"/></li>
-                                    <li><img src={americanexpress} alt="image"/></li>
+                                    <li><img src={visa} alt="Hotux"/></li>
+                                    <li><img src={mastercard} alt="Hotux"/></li>
+                                    <li><img src={americanexpress} alt="Hotux"/></li>
                                 </ul>
                             </div>
                         </div>
@@ -91,7 +91,7 @@ const Footer = () => {
                     </div>
                     <div className="col-md-4 col-sm-12 col-xs-12">
                         <div className="tripadvisor-logo text-center">
-                            <img src={tripadvisor} alt="image"/>
+                            <img src={tripadvisor} alt="Hotux"/>
                         </div>
                     </div>
                     <div className="col-md-4 col-sm-12 col-xs-12">
@@ -103,8 +103,8 @@ const Footer = () => {
                             </ul>
                         </div>
                         <div className="playstore-links">
-                            <img src={appstore} alt="image" className="mar-right-10"/>
-                            <img src={googleplay} alt="image"/>
+                            <img src={appstore} alt="Hotux" className="mar-right-10"/>
+                            <img src={googleplay} alt="Hotux"/>
                         </div>
                     </div>
                 </div>

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom"
 const Newsletter = () => {
   return (
     <section class="newsletter">
@@ -17,9 +17,9 @@ const Newsletter = () => {
         <div class="newsletter-form">
           <form>
             <input type="email" placeholder="Enter your email" />
-            <a href="#" class="btn btn-orange">
+            <Link to="/signup" class="btn btn-orange">
               SIGN UP
-            </a>
+            </Link>
           </form>
         </div>
       </div>

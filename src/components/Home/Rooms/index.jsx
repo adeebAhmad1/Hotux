@@ -2,18 +2,20 @@ import React, { Component } from "react";
 import img1 from "../../../resources/images/room1.jpg";
 import img2 from "../../../resources/images/room2.jpg";
 import img3 from "../../../resources/images/room3.jpg";
+import img4 from "../../../resources/images/room4.jpg";
 import { Link } from "react-router-dom"
+import Slider from "react-slick";
 class Rooms extends Component {
   state = {
-    titles: ["SUPER DELUXE", "JUNIOR SUITE", "EXECUTIVE SUITE"],
-    images: [img1, img2, img3]
+    titles: ["SUPER DELUXE", "JUNIOR SUITE", "EXECUTIVE SUITE","ROYAL DELUXE"],
+    images: [img1, img2, img3,img4]
   };
   showCards = () => {
     return this.state.titles.map((el, i) => (
       <div className="col-md-4 col-sm-6 col-xs-6" key={i}>
         <div className="room-item">
           <div className="room-image">
-            <img src={this.state.images[i]} alt="image" />
+            <img src={this.state.images[i]} alt={el} />
           </div>
           <div className="room-content">
             <div className="room-title">
@@ -61,6 +63,15 @@ class Rooms extends Component {
     ));
   };
   render() {
+    const settings = {
+      dots: false,
+      autoplay: true,
+      autoplaySpeed: 2500,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 3,
+      slidesToScroll: 1
+    };
     return (
       <section className="rooms">
         <div className="container">
@@ -75,9 +86,9 @@ class Rooms extends Component {
             </p>
           </div>
           <div className="room-outer">
-            <div className="row">
+            <Slider {...settings} className="row">
               {this.showCards()}
-            </div>
+            </Slider>
           </div>
           <div className="section-btn">
             <Link to="/rooms" className="btn btn-black mar-right-10">

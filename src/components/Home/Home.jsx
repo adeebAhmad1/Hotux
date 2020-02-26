@@ -1,8 +1,8 @@
 import Swiper from "./Swiper"
-import About from './About';
+import Regarding from './Regarding';
 import Rooms from './Rooms';
 import Discover from './Discover';
-import Services from './Services';
+import Facilities from '../Services/Facilities';
 import News from './News';
 import Newsletter from './News/Newsletter';
 import Reviews from './Reviews';
@@ -11,14 +11,17 @@ import LoginModel from "../Login/LoginModel";
 import RegisterModel from "../Register/RegisterModel";
 
 class Home extends Component {
+  componentDidMount(){
+    document.title = "Home | Hotux"
+  }
   render() {
     return (
       <div>
       <Swiper/>
-      <About/>
+      <Regarding/>
       <Rooms/>
       <Discover/>
-      <Services/>
+      <Facilities/>
       <Reviews/>
       <News/>
       <Newsletter/>
