@@ -37,14 +37,10 @@
   "description": "Hotel Management Site",
   "main": "index.js",
   "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adeebAhmad1/Hotux.git"
-  },
+
   "author": "Adeeb Ahmad",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/adeebAhmad1/Hotux/issues"
-  },
-  "homepage": "https://github.com/adeebAhmad1/Hotux#readme"
+  }
 }
