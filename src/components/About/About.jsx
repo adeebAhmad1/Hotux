@@ -6,7 +6,7 @@ import Team from "./Team";
 import Facilities from "../Services/Facilities";
 import Awards from "./Awards";
 import LoginModel from "../Login/LoginModel";
-import RegisterModel from "../Register/RegisterModel";
+import SignupModel from "../Signup/SignupModel";
 class About extends Component {
   componentDidMount(){
     document.title = " About | Hotux"
@@ -21,7 +21,7 @@ class About extends Component {
         <Awards />
         <Facilities />
         <LoginModel history={this.props.history} />
-        <RegisterModel history={this.props.history} />
+        <SignupModel history={this.props.history} />
       </div>
     );
   }

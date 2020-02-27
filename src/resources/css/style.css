@@ -2976,7 +2976,7 @@ section.check-in{padding: 80px;}
 
 .check-in .date-range-inner-wrapper{position: relative;}
 
-.check-in a.btn-orange{
+.check-in .btn-orange{
     border-radius: 0;
 }
 
@@ -4573,7 +4573,7 @@ section.gallery.gallery1{
 .login-content .form-btn{
     margin: 15px 0;
 }
-.login-content .form-btn a.btn-orange{
+.login-content .form-btn .btn-orange{
     width: 100%;
     border-radius: 0;
     margin-bottom: 15px;
@@ -4594,7 +4594,6 @@ section.gallery.gallery1{
 
 @media(max-width: 767px){
   .login-content{margin-bottom: 50px;}
-
   section.forgot-password{text-align: center;}
 }
 

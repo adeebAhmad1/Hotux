@@ -33,3 +33,25 @@ code {
 .model{
   display: none;
 }
+.details .slick-dots > li{
+  width: calc(100%/9) !important;
+  bottom: 27.5px !important;
+  transition: all 0.3s ease-in-out;
+}
+.details .slick-dots > .slick-active{
+  transform: scale(1.2) translateY(-10px);
+  z-index: 100;
+}
+.details .slick-arrow{
+  display: block !important;
+}
+.details .slick-prev::before{
+  content: "←" !important;
+}
+.details .slick-next::before{
+  content: "→" !important;
+}
+
+.details .slick-prev::before , .details .slick-next::before{
+  line-height: 2 !important;
+}
