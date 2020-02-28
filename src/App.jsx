@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
+import "react-infinite-calendar/styles.css";
 import "./resources/css/App.css";
 import "./resources/css/bootstrap.min.css";
 import "./resources/css/default.css";
@@ -16,6 +17,7 @@ import Forgot from "./components/Forgot";
 import Details from "./components/RoomDetails/Details"
 import Login from "./components/Login";
 import Signup from "./components/Signup";
+import CheckAvailability from "./components/Booking/CheckAvailability";
 class App extends Component {
   render() {
     document.title = "Hotux | Forgot Password"
@@ -33,6 +35,7 @@ class App extends Component {
             <Route component={Login} path="/login" />
             <Route component={Signup} path="/signup" />
             <Route component={Details} path="/rooms/:roomId" />
+            <Route component={CheckAvailability} path="/booking/availability" />
             <Footer />
           </div>
         </BrowserRouter>
