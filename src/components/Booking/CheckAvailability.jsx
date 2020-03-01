@@ -11,6 +11,7 @@ class CheckAvailabitity extends Component {
     );
   };
   render() {
+    document.title = "Booking | Check Availabitity"
     return (
       <div className="">
         <Breadcrumb page="Check Availabitity" />
@@ -22,26 +23,26 @@ class CheckAvailabitity extends Component {
               </h2>
               <div className="reservation-links-content">
                 <div className="res-item">
-                  <Link to="availability.html" className="active">
+                  <Link to="/booking/availability" className="active">
                     1
                   </Link>
                   <p>Check Availability</p>
                 </div>
                 <div className="res-item">
-                  <Link to="room-select.html">2</Link>
+                  <Link to="/booking/select_room">2</Link>
                   <p>Select Room</p>
                 </div>
                 <div className="res-item">
-                  <Link to="booking.html">3</Link>
+                  <Link to="/booking/book_room">3</Link>
                   <p>Booking</p>
                 </div>
                 <div className="res-item">
-                  <Link to="confirmation.html">4</Link>
+                  <Link to="/booking/confirmation">4</Link>
                   <p>Confirmation</p>
                 </div>
               </div>
             </div>
-            <form action="/bookings/select_room">
+            <form onSubmit={(e)=>{e.preventDefault();this.props.history.push("/booking/select_room")}} action="/booking/select_room">
               <div className="banner-form form-style-1">
                 <div className="form-content">
                   <div className="table-item">

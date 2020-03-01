@@ -1,5 +1,6 @@
 import React from "react";
 import img from "../../../resources/images/sr1.jpg";
+import SideCard from "../../utils/SideCard";
 const RoomInfo = props => {
   return (
     <div className="detail-content" style={{marginTop:`50px`}}>
@@ -87,22 +88,7 @@ const RoomInfo = props => {
             </div>
           </div>
           <div className="col-md-4 col-sm-12 col-xs-12">
-            <div className="sidebar-room">
-              <div className="sr-image">
-                <img src={img} alt="IMG" />
-              </div>
-              <div className="room-title sr-content">
-                <h3>{props.title}</h3>
-                <p>$1200/Night</p>
-                <div className="deal-rating">
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                  <span className="fa fa-star checked"></span>
-                </div>
-              </div>
-            </div>
+            <SideCard title={props.title} img={img} />
           </div>
         </div>
       </div>

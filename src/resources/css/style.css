@@ -36,9 +36,22 @@
 .slide3{
   background-image: url("../images/slider/slider3.jpg");
 }
+.restaurant0{
+  background-image: url("../images/slider/slider5.jpg");
+}
+.restaurant1{
+  background-image: url("../images/slider/slider6.jpg");
+}
+.restaurant2{
+  background-image: url("../images/slider/slider7.jpg");
+}
 .navbar {
   border-bottom: 0;
   padding: 0;
+}
+
+.banner .slick-dots{
+  bottom: 50px !important;
 }
 
 .sidebar .navbar-nav{
@@ -355,7 +368,6 @@ header.main_header_area.headerstyle-2 .slicknav_btn.slicknav_collapsed::before{
   line-height: 22px ;
 }
 
-.slicknav_btn:focus {}
 
 
 /* Button Text */

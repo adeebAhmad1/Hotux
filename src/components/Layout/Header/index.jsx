@@ -100,14 +100,11 @@ class Header extends Component {
                     <Link
                       to="/"
                       className="dropdown-toggle"
-                      data-toggle="dropdown"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
                     >
-                      Home<i className="fa fa-angle-down" aria-hidden="true"></i>
+                      Home
+                      {/* <i className="fa fa-angle-down" aria-hidden="true"></i> */}
                     </Link>
-                    <ul className="dropdown-menu">
+                    {/* <ul className="dropdown-menu">
                       <li className="submenu dropdown">
                         <Link
                           to="/"
@@ -141,7 +138,7 @@ class Header extends Component {
                       <li>
                         <Link to="index-6.html">Home New 3</Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li className="submenu dropdown">
                     <Link
@@ -353,17 +350,12 @@ class Header extends Component {
                   </li>
                   <li className="submenu dropdown">
                     <Link
-                      to="restaurant.html"
-                      className="dropdown-toggle"
-                      data-toggle="dropdown"
-                      role="button"
-                      aria-haspopup="true"
-                      aria-expanded="false"
+                      to="restaurant"
                     >
                       Restaurant
-                      <i className="fa fa-angle-down" aria-hidden="true"></i>
+                      {/* <i className="fa fa-angle-down" aria-hidden="true"></i> */}
                     </Link>
-                    <ul className="dropdown-menu">
+                    {/* <ul className="dropdown-menu">
                       <li>
                         <Link to="restaurant.html">Home</Link>
                       </li>
@@ -376,7 +368,7 @@ class Header extends Component {
                       <li>
                         <Link to="restaurant-reserve.html">Reservation</Link>
                       </li>
-                    </ul>
+                    </ul> */}
                   </li>
                   <li className="submenu dropdown">
                     <Link

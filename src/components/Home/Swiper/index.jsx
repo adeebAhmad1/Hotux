@@ -35,7 +35,7 @@ class Swiper extends Component {
     const settings = {
       dots: false,
       autoplay: true,
-      autoplaySpeed: 1500,
+      autoplaySpeed: 2500,
       infinite: true,
       speed: 500,
       slidesToShow: 1,

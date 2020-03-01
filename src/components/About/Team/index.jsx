@@ -1,14 +1,9 @@
 import React, { Component } from "react";
-import img1 from "../../../resources/images/team1.jpg";
-import img2 from "../../../resources/images/team2.jpg";
-import img3 from "../../../resources/images/team3.jpg";
-import img4 from "../../../resources/images/team4.jpg";
 import Slider from "react-slick";
 import { Link } from "react-router-dom"
 class Team extends Component {
   state = {
     names: ["John Anderson", "Erina Gray", "Micheal Carter", "Nelson Roar"],
-    images: [img1, img2, img3, img4],
     job: ["Assistant", "Managing Director", "Supervisor", "Project Manager"]
   };
   showCards = () => {
@@ -16,7 +11,7 @@ class Team extends Component {
       <div className="col-md-4"  key={i}>
         <div className="team-item">
           <div className="team-image">
-            <img src={this.state.images[i]} alt={el} />
+            <img src={this.props.images[i]} alt={el} />
           </div>
           <div className="team-content">
             <h4>{el}</h4>
@@ -62,9 +57,7 @@ class Team extends Component {
       <section className="about-team">
         <div className="container">
           <div className="section-title">
-            <h2>
-              Explore <span>Team</span>
-            </h2>
+            {this.props.h2}
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ex
               neque, sodales accumsan sapien et, auctor vulputate quam donec
