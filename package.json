@@ -38,7 +38,10 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "https://github.com/adeebAhmad1/Hotux.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adeebAhmad1/Hotux.git"
+  },
   "description": "Hotel Management Site",
   "main": "index.js",
   "devDependencies": {},
