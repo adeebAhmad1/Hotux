@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import Breadcrumb from "../utils/Breadcrumb";
 import SideCard from "../utils/SideCard";
 import img from "../../resources/images/room-b3.jpg";
+import LoginModel from "../Login/LoginModel";
+import SignupModel from "../Signup/SignupModel";
 class Contact extends Component {
   render() {
     return (
@@ -149,6 +151,8 @@ class Contact extends Component {
             </div>
           </div>
         </section>
+        <LoginModel history={this.props.history} />
+        <SignupModel history={this.props.history} />
       </div>
     );
   }

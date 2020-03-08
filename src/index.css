@@ -121,3 +121,9 @@ code {
 .displayBlock{
   display: block;
 }
+.phoneNo{
+  position: absolute;
+    top: 30%;
+    left: 10%;
+    transform: translate(-10%, -30%);
+}

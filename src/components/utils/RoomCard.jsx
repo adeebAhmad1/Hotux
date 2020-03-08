@@ -9,7 +9,7 @@ const RoomCard = (props) => {
       <div className="room-content">
         <div className="room-title">
           <h4>{props.title}</h4>
-          <p>$1200/Night</p>
+          <p>${props.price}/Night</p>
           <div className="deal-rating">
             <span className="fa fa-star checked"></span>
             <span className="fa fa-star checked"></span>
@@ -42,7 +42,7 @@ const RoomCard = (props) => {
           >
             VIEW DETAILS
           </Link>
-          <Link to="/booking" className="btn btn-orange">
+          <Link to="/bookings/check_availability" className="btn btn-orange">
             BOOK NOW
           </Link>
         </div>

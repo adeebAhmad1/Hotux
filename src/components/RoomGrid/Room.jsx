@@ -7,10 +7,11 @@ class Room extends Component {
   showCards = () =>
     this.context.titles.map((el, i) => (
       <div className="col-md-4 col-sm-6 col-xs-6" key={i}>
-        <RoomCard title={el} img={this.context.images[i]} />
+        <RoomCard title={el} price={this.context.prices[i]} img={this.context.images[i]} />
       </div>
     ));
   render() {
+    console.log(this.context)
     document.title = "Rooms | Hotux"
     return (
       <div>

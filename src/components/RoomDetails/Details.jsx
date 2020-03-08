@@ -3,6 +3,8 @@ import Amenities from "../Services/Amenities";
 import Breadcrumb from "../utils/Breadcrumb";
 import Features from "../Services/Features";
 import { RoomsContext } from "../../context/RoomsContext";
+import LoginModel from "../Login/LoginModel";
+import SignupModel from "../Signup/SignupModel";
 import Rooms from "../Home/Rooms";
 import RoomInfo from "./RoomInfo";
 import RoomSlider from "./RoomSlider";
@@ -30,6 +32,8 @@ class Details extends Component {
         <Amenities />
         <Features />
         <Rooms />
+        <LoginModel history={this.props.history} />
+        <SignupModel history={this.props.history} />
       </div>
     );
   }

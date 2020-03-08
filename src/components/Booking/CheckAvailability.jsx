@@ -1,48 +1,36 @@
 import React, { Component } from "react";
 import InfiniteCalendar, { withRange, Calendar } from "react-infinite-calendar";
 import Breadcrumb from "../utils/Breadcrumb";
-import { Link } from "react-router-dom";
+import Reservation from "../utils/Reservation";
+import LoginModel from "../Login/LoginModel";
+import SignupModel from "../Signup/SignupModel";
 class CheckAvailabitity extends Component {
   dateSelect = date => {
     this.refs.chkIn.value = date.start.toDateString();
     this.refs.chkOut.value = date.end.toDateString();
+    this.refs.chkIn.value =
+      date.start < new Date(new Date().toDateString())
+        ? "Not Available"
+        : date.start.toDateString();
     this.refs.nights.value = Math.ceil(
       (date.end.getTime() - date.start.getTime()) / 1000 / 86400
     );
   };
   render() {
-    document.title = "Booking | Check Availabitity"
+    document.title = "Booking | Check Availabitity";
     return (
       <div className="">
         <Breadcrumb page="Check Availabitity" />
         <section className="content reservation-main">
           <div className="container">
-            <div className="reservation-links text-center">
-              <h2 className="mar-bottom-60 text-capitalize">
-                Make Your Reservation
-              </h2>
-              <div className="reservation-links-content">
-                <div className="res-item">
-                  <Link to="/booking/availability" className="active">
-                    1
-                  </Link>
-                  <p>Check Availability</p>
-                </div>
-                <div className="res-item">
-                  <Link to="/booking/select_room">2</Link>
-                  <p>Select Room</p>
-                </div>
-                <div className="res-item">
-                  <Link to="/booking/book_room">3</Link>
-                  <p>Booking</p>
-                </div>
-                <div className="res-item">
-                  <Link to="/booking/confirmation">4</Link>
-                  <p>Confirmation</p>
-                </div>
-              </div>
-            </div>
-            <form onSubmit={(e)=>{e.preventDefault();this.props.history.push("/booking/select_room")}} action="/booking/select_room">
+            <Reservation state0="active" state1="" state2="" state3="" />
+            <form
+              onSubmit={e => {
+                e.preventDefault();
+                this.props.history.push("s/select_room");
+              }}
+              action="/booking/select_room"
+            >
               <div className="banner-form form-style-1">
                 <div className="form-content">
                   <div className="table-item">
@@ -54,7 +42,7 @@ class CheckAvailabitity extends Component {
                           className="form-control"
                           readOnly
                           required
-                          // defaultValue="Check In"
+                          placeholder="Check In"
                           style={{ backgroundColor: `#fff` }}
                           ref="chkIn"
                         />
@@ -73,7 +61,7 @@ class CheckAvailabitity extends Component {
                           className="form-control"
                           readOnly
                           required
-                          // defaultValue="Check Out"
+                          placeholder="Check Out"
                           style={{ backgroundColor: `#fff` }}
                           ref="chkOut"
                         />
@@ -161,6 +149,8 @@ class CheckAvailabitity extends Component {
             </div>
           </div>
         </section>
+        <LoginModel history={this.props.history} />
+        <SignupModel history={this.props.history} />
       </div>
     );
   }

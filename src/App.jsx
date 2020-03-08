@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import "react-infinite-calendar/styles.css";
 import "./resources/css/App.css";
@@ -20,10 +20,13 @@ import SelectRoom from "./components/Booking/SelectRoom";
 import Restaurant from "./components/Restaurant/Restaurant";
 import Contact from "./components/Contact/Contact";
 import Layout from "./components/Layout/Layout";
-class App extends Component {
-  render() {
-    document.title = "Hotux | Travellers Choice";
-    return (
+import Booking from "./components/Booking/Booking";
+import Confirmation from "./components/Booking/Confirmation";
+import PriceContextProvider from "./context/PriceContext";
+const App = () => {
+  document.title = "Hotux | Travellers Choice";
+  return (
+    <PriceContextProvider>
       <RoomsContextProvider>
         <BrowserRouter>
           <div style={{ position: `relative` }}>
@@ -38,15 +41,19 @@ class App extends Component {
               <Route component={Login} path="/login" />
               <Route component={Signup} path="/signup" />
               <Route component={Details} path="/rooms/:roomId" />
-              <Route component={CheckAvailability}path="/booking/availability" />
-              <Route component={SelectRoom} path="/booking/select_room" />
+              <Route
+                component={CheckAvailability}
+                path="/bookings/check_availability"
+              />
+              <Route component={SelectRoom} path="/bookings/select_room" />
               <Route component={Contact} path="/contact" />
+              <Route component={Booking} path="/bookings/booking/:bookedRoom" />
             </Layout>
           </div>
         </BrowserRouter>
       </RoomsContextProvider>
-    );
-  }
-}
+    </PriceContextProvider>
+  );
+};
 
 export default App;

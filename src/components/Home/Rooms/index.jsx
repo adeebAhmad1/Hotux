@@ -9,7 +9,7 @@ class Rooms extends Component {
     const titles = this.context.titles.slice(0,5)
     return titles.map((el, i) => (
       <div className="col-md-4 col-sm-6 col-xs-6" key={i}>
-        <RoomCard img={this.context.images[i]} title={el}/>
+        <RoomCard price={this.context.prices[i]} img={this.context.images[i]} title={el}/>
       </div>
     ));
   };
