@@ -1,0 +1,66 @@
+1. Create a social media platform
+	a. Website
+		i. Works on various browsers
+		ii. Not advertised
+		iii. Don’t need SEO
+	b. App
+		i. Downloadable on iPhone, Samsung, etc.
+		ii. Don’t need it published on Appstore/Google Play
+		iii. Private App
+2. Community:
+	a. Private community, by invitation
+	b. Rights
+		i. Admin
+		ii. Moderator
+		iii. Individual Users
+		iv. Groups 
+3. Features:
+	a. Initial setup:
+		i. Register with login/password
+		ii. Set up profile (Option for username – Actual Full Name, First Name,Pseudonym)
+		iii. Privacy/Disclaimer notices to be signed by user
+		iv. User goes to Intro section
+			1. Which explains rules
+			2. Has first time tutorial in a video and graphics format
+			3. Schedule initial interaction with Admin (shows calendar availability onGoogle hangout / Google Meetup)
+		v. Interaction with Admin via video/audio
+		vi. Information from this interaction will be stored on a different platform by Admin
+		vii. Part of “agreed upon next steps” during this initial interaction will be signed by user. This will be emailed to the user on this platform and stored on a different platform.
+		viii. After this, user will be provided with the following on the profile
+			1. Dashboard
+				a. Weekly prompt from Admin
+				b. Dasboard will have option for uploading different types of files (text, audio, video, picture); and option to keep those private or share with different groups.
+				c. Access to Videos/Blogs/Articles etc to view/read/comment/like
+				d. Activity feed
+					i. From groups
+					ii. From individual users added as friends
+				e. Points
+					i. Earn a weekly badge of completion (more points with number of chats with other users/groups)
+			2. User will automatically become part of all groups
+			3. Users can add Friends (i.e., individual users) 
+			4. Access to assigned moderator (which will be Admin for now)
+	b. User Interaction with Community:
+		i. Interact with individual members
+			1. Chat / Live chat
+			2. Upload files (text, audio, video, picture)
+			3. Comment on individual members’ uploads
+		ii. Interact with groups
+			1. Chat / Live chat
+			2. Upload files (text, audio, video, picture)
+			3. Comment on group members’ uploads
+		iii. Anonymous page
+			1. Users can post text anonymously
+			2. Others can comment
+			3. Others can hit various buttons (e..g, Instead of “Like, there will be buttons for “I agree”, “I hear you”, etc.)
+		iv. Admin can ofcourse interact with individual members and groups via video/audito, chat and email
+4. Admin featutre:
+	a. Private interaction with individual users via chat, email, video/audio
+	b. Admin can add/delete users
+	c. Admin can create/delete groups
+	d. Private interaction with groups via messaging and email
+5. Ad features:
+	a. None
+6. CMS:
+	a. Open to ideas on which content management system to use incuding a CMS platform that will help with technical glitches
+	b. Security
+	c. Scalability 

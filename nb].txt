@@ -1,0 +1,29 @@
+1.Community Page
+2.Login
+3.Signup
+4.Courses
+5.Course Details
+6.E-Books
+7.E-Books Details
+8.Groups(Communities)
+9.Groups-Before-Follow(Communities)
+10.Groups-After-Follow(Communities)
+11.Community-Popup
+12.Community Page After Login(Only Header)
+13.Courses Page After Login(Only Header)
+14.Course Details Page After Login(Only Header)
+15.Cart
+16.Checkout
+17.My Courses
+18.6.E-Books After Login(Only Header)
+19.E-Books Details After Login(Only Header)
+20.Checkout-2
+21.Messages
+22.My-Profile
+23.User-Profile
+24.My-Profile-Courses
+25.Credits
+26.Create-Course
+27.Profile-Settings
+28.watching-course
+29.Couse-add-details

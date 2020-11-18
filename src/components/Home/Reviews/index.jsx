@@ -7,7 +7,7 @@ import Slider from "react-slick";
 class Reviews extends Component {
   state = {
     images: [img1, img2, img1],
-    names: ["Micheal Clordy", "Ketty Perry", "Micheal Clordy"]
+    names: ["Micheal Clordy", "Ketty <br/> Perry", "Micheal Clordy"]
   };
   showReviews = () => (
     this.state.images.map((el, i) => (

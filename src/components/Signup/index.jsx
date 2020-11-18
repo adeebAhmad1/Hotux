@@ -2,7 +2,37 @@ import React, { Component } from "react";
 import Breadcrumb from "../utils/Breadcrumb";
 import logo from "../../resources/images/logo-black.png";
 import { Link } from "react-router-dom";
+import firebase,{db} from "../../config/firebase"
 class Signup extends Component {
+  state={
+    username: "",
+    email: "",
+    password: "",
+    confirmPassword: ""
+  }
+  handleSubmit = (e)=>{
+    e.preventDefault()
+    firebase.auth().createUserWithEmailAndPassword(this.state.email, this.state.password).then((doc)=>{
+      db.collection("userData")
+          .add({
+            id: doc.user.uid,
+            username: this.state.username,
+            role: 0
+          })
+          .then(docRef => {
+            console.log("Document written with ID: ", docRef.id);
+            this.props.history.push("/login");
+          })
+          .catch(error => {
+            console.error("Error adding document: ", error);
+          });
+    }).catch((error) => {
+      console.log(error)
+    });
+  }
+  handleChange = (e)=>{
+    this.setState({[e.target.name]: e.target.value})
+  }
   render() {
     return (
       <div>
@@ -32,18 +62,18 @@ class Signup extends Component {
               >
                 <div className="login-content pad-0">
                   <h3>Create a Hotux Account</h3>
-                  <form>
+                  <form action="/" onSubmit={this.handleSubmit}>
                     <div className="form-group">
-                      <input type="text" placeholder="Enter username" />
+                      <input name="username" type="text" onChange={this.handleChange} value={this.state.username} placeholder="Enter username" />
                     </div>
                     <div className="form-group">
-                      <input type="email" placeholder="Enter email address" />
+                      <input name="email" type="email" onChange={this.handleChange} value={this.state.email} placeholder="Enter email address" />
                     </div>
                     <div className="form-group">
-                      <input type="password" placeholder="Enter password" />
+                      <input name="password" type="password" onChange={this.handleChange} value={this.state.password} placeholder="Enter password" />
                     </div>
                     <div className="form-group">
-                      <input type="password" placeholder="Confirm password" />
+                      <input name="confirmPassword" type="password" onChange={this.handleChange} value={this.state.confirmPassword} placeholder="Confirm password" />
                     </div>
                     <div className="form-btn">
                       <button className="btn btn-orange">SIGN UP</button>
@@ -57,17 +87,7 @@ class Signup extends Component {
                     </li>
                     <li>
                       <Link to="/">
-                        <i className="fab fa-twitter" aria-hidden="true"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/">
-                        <i className="fab fa-instagram" aria-hidden="true"></i>
-                      </Link>
-                    </li>
-                    <li>
-                      <Link to="/">
-                        <i className="fab fa-linkedin" aria-hidden="true"></i>
+                        <i className="fab fa-google" aria-hidden="true"></i>
                       </Link>
                     </li>
                   </ul>
